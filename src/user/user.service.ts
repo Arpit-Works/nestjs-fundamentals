@@ -47,4 +47,13 @@ export class UserService {
         }
     }
 
+    deleteUser(id:number){
+        const user = this.users.find((user)=> user.id == id)
+
+        return {
+            message: "User Deleted",
+            data:user
+        }
+    }
+
 }
