@@ -8,6 +8,11 @@ export class UserController {
     constructor (private readonly UserService: UserService) {}
 
     @Get()
+    getAllUser():unknown{
+        return this.UserService.findAllUser()
+    }
+
+    @Get()
     getUserByName(@Query('name') name: string):unknown{
 
         return this.UserService.finduser(name)

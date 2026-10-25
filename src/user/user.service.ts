@@ -12,6 +12,10 @@ interface User{
 export class UserService {
     users: User[] = [{id: 1, name: "Arpit", },{id: 2,name: "Jhon",},{id: 3,name: "Jane",},{id: 4,name: "Jim",},{id: 5,name: "Jill",}]
 
+    findAllUser(){
+        return this.users
+    }
+
     finduser(name:string){
         if(name){
             return this.users.filter(
