@@ -7,3 +7,7 @@ Business Logic -> Providers /Services
 App Structure -> Modules 
 Request Validation -> Pipes 
 Auth middleware -> Guards 
+
+
+Provider handle Request and Response 
+
